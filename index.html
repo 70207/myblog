@@ -8,6 +8,7 @@ title: 我的Blog
 	site.baseurl:{{site.baseurl}}
 　　{% for post in site.posts %}
     post.url::{{post.url}}
+    post.title: {{post.title}}
 　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　　{% endfor %}
 </ul>
